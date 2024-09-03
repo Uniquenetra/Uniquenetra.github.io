@@ -28,6 +28,27 @@
             margin: 10px 0 0 0;
             color: #a6a6a6;
         }
+        .intro {
+            padding: 20px;
+            text-align: center;
+        }
+        .intro img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #f5b7b1;
+        }
+        .intro h3 {
+            color: #6d6d6d;
+            font-size: 28px;
+            margin: 10px 0;
+        }
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0;
+        }
         section {
             padding: 40px 20px;
             max-width: 800px;
@@ -54,6 +75,14 @@
         .projects a {
             color: #6d6d6d;
             text-decoration: none;
+            background-color: #e8f0f2;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .projects a:hover {
+            background-color: #d0e4e8;
         }
         footer {
             background-color: #f3f7fc;
@@ -67,6 +96,14 @@
             color: #808080;
             font-size: 14px;
         }
+        .graphics {
+            background-image: url('https://path-to-your-butterfly-graphic.png'); /* replace with actual URL */
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom right;
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -76,7 +113,8 @@
         <h2>Data Scientist & AI Developer</h2>
     </header>
 
-    <section>
+    <section class="intro">
+        <img src="https://path-to-your-picture.jpg" alt="Netra Kulkarni"> <!-- Replace with your actual picture URL -->
         <h3>About Me</h3>
         <p>
             Hello! I'm Netra Kulkarni, a Data Scientist who thrives on turning data into delightful insights. With a knack for Machine Learning and Deep Learning, I don't just crunch numbers—I let the data tell its story, and believe me, it always has something interesting to say.
@@ -95,15 +133,19 @@
     <section class="projects">
         <h3>My Projects</h3>
         <ul>
-            <li><a href="https://github.com/your-username/project1" target="_blank">Project 1: Predictive Analytics with Python</a></li>
-            <li><a href="https://github.com/your-username/project2" target="_blank">Project 2: Deep Learning for Image Classification</a></li>
-            <li><a href="https://github.com/your-username/project3" target="_blank">Project 3: Natural Language Processing with Transformers</a></li>
+            <li><a href="https://github.com/Uniquenetra/ml-based-ontology-matching" target="_blank">ML-Based Ontology Matching</a></li>
+            <li><a href="https://github.com/Uniquenetra/top-n-similarity-recommendation" target="_blank">Top-N Similarity Recommendation</a></li>
+            <li><a href="https://github.com/Uniquenetra/Hand_Gesture_Recognition" target="_blank">Hand Gesture Recognition</a></li>
+            <li><a href="https://github.com/Uniquenetra/Retail_dashboard_info_viz" target="_blank">Retail Dashboard Info Visualization</a></li>
+            <li><a href="https://github.com/Uniquenetra/hindi_song_writer_Gen_AI" target="_blank">Hindi Song Writer Gen AI</a></li>
         </ul>
     </section>
 
     <footer>
         <p>Connect with me on <a href="https://www.linkedin.com/in/your-username" target="_blank">LinkedIn</a> | &copy; 2024 Netra Kulkarni</p>
     </footer>
+
+    <div class="graphics"></div>
 
 </body>
 </html>
