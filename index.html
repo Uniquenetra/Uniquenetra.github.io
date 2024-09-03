@@ -6,23 +6,74 @@
     <title>Netra Kulkarni - Data Scientist</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             background-color: white;
             color: #333;
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             position: relative;
         }
-        .container {
-            width: 80%;
+        header {
+            background-color: #f9f3f3;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #e0e0e0;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #6d6d6d;
+        }
+        header h2 {
+            font-size: 24px;
+            margin: 10px 0 0 0;
+            color: #a6a6a6;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
             margin: 0 auto;
+        }
+        section h3 {
+            color: #6d6d6d;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .projects li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .projects a {
+            color: #6d6d6d;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #f3f7fc;
             text-align: center;
             padding: 20px;
+            border-top: 5px solid #e0e0e0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+            color: #808080;
+            font-size: 14px;
         }
         .profile-pic {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            display: block;
+            margin: 0 auto;
         }
         .butterfly {
             position: absolute;
@@ -30,31 +81,48 @@
             right: 10px;
             width: 100px;
         }
-        h1, h2, p {
-            margin: 0;
-            padding: 10px 0;
-        }
-        h1 {
-            color: #FF69B4; /* Example pastel color */
-        }
-        h2 {
-            color: #6495ED; /* Example pastel color */
-        }
-        p {
-            color: #2E8B57; /* Example pastel color */
-            font-size: 1.1em;
-        }
     </style>
 </head>
 <body>
-    <img src="Colorful-Butterflies-Digital-Graphic-72765460-1.png" alt="Butterfly Graphic" class="butterfly">
-    <div class="container">
-        <img src="1673360016728.jpeg" alt="Netra Kulkarni's Profile Picture" class="profile-pic">
+
+    <img src="butterfly.png" alt="Butterfly Graphic" class="butterfly">
+
+    <header>
+        <img src="profile.jpg" alt="Netra Kulkarni's Profile Picture" class="profile-pic">
         <h1>Netra Kulkarni</h1>
-        <h2>Data Scientist | AI Enthusiast</h2>
+        <h2>Data Scientist & AI Developer</h2>
+    </header>
+
+    <section>
+        <h3>About Me</h3>
         <p>
-            I'm Netra Kulkarni, a passionate data scientist who thrives on turning data into meaningful insights. I specialize in machine learning, deep learning, and AI-driven solutions. With a knack for solving complex problems and a love for innovation, I create impactful projects that push the boundaries of technology. When I'm not crunching numbers or writing code, you'll find me on stage, leading events and parties with the same energy and enthusiasm I bring to my work.
+            Hello! I'm Netra Kulkarni, a Data Scientist who thrives on turning data into delightful insights. With a knack for Machine Learning and Deep Learning, I don't just crunch numbers—I let the data tell its story, and believe me, it always has something interesting to say.
         </p>
-    </div>
+        <p>
+            But let’s be real for a second—being a data scientist isn’t just about algorithms and models (though those are my jam). It’s about solving real-world problems, and I’m all about that life. Whether I’m predicting trends before they happen, designing AI that makes you wonder if it's reading your mind, or digging into data so deep that even Sherlock would be impressed, I bring a mix of precision, creativity, and a sprinkle of sass to everything I do.
+        </p>
+        <p>
+            When I’m not buried in code or swimming in datasets, you’ll find me on stage, either hosting a lively event or leading a party—because who says data scientists can’t be the life of the party too? I love connecting with people, whether it's through my work or through a mic.
+        </p>
+        <p>
+            So, if you're looking for someone who can whip your data into shape and make it dance to the tune of actionable insights, you're in the right place. Let's make some data magic together!
+        </p>
+    </section>
+
+    <section class="projects">
+        <h3>My Projects</h3>
+        <ul>
+            <li><a href="https://github.com/Uniquenetra/ml-based-ontology-matching" target="_blank">ML-Based Ontology Matching</a></li>
+            <li><a href="https://github.com/Uniquenetra/top-n-similarity-recommendation" target="_blank">Top-N Similarity Recommendation</a></li>
+            <li><a href="https://github.com/Uniquenetra/Hand_Gesture_Recognition" target="_blank">Hand Gesture Recognition</a></li>
+            <li><a href="https://github.com/Uniquenetra/Retail_dashboard_info_viz" target="_blank">Retail Dashboard Info Viz</a></li>
+            <li><a href="https://github.com/Uniquenetra/hindi_song_writer_Gen_AI" target="_blank">Hindi Song Writer Gen AI</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/your-username" target="_blank">LinkedIn</a> | &copy; 2024 Netra Kulkarni</p>
+    </footer>
+
 </body>
 </html>
