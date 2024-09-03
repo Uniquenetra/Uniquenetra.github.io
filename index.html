@@ -95,6 +95,11 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+        .contact-form h3 {
+            margin-bottom: 20px;
+            color: #6d6d6d;
         }
         .contact-form label {
             display: block;
@@ -161,13 +166,14 @@
         <p>So, if you're looking for someone who can whip your data into shape and make it dance to the tune of actionable insights, you're in the right place. Let's make some data magic together!</p>
     </section>
 
-    <section id="my-ds-story">
-        <h3>My Data Science Story</h3>
-        <p>My journey into data science started with a 'baby' project as a Project Manager for a demand forecasting project for one of the largest retailers in Thailand. The algorithms involved and the entire process piqued my interest in data science. Even after implementing this as a business analyst and project manager, I decided to dive deeper into machine learning and technology. So, I enrolled in one of the top universities in Portugal to learn the nitty-gritty of these fields head-on.</p>
-        <p>My mantra in life is “Keep Learning, Keep Growing.” I’ve been going wherever life takes me, and that’s one of the best ways I’ve learned and grown. I am passionate about technology and newer innovations. My ambition is to lead an organization someday, and I’m committed to continuous skill development in this fast-changing world. Beyond my professional work, I have a love for hosting events and leading parties, showcasing that creativity and technical expertise can go hand-in-hand.</p>
+    <section id="my-story">
+        <h3>My Story</h3>
+        <p>My journey into the world of data science began with what I like to call my 'baby' project—demand forecasting for one of Thailand’s biggest retailers. Diving into those algorithms was like discovering a new world, and I was hooked. Despite my role as a business analyst and project manager, I knew I had to dig deeper. So, I took a leap and enrolled in one of Portugal’s top universities to get my hands dirty with machine learning and tech.</p>
+        <p>I live by the mantra “Keep Learning, Keep Growing.” Life has taken me on a wild ride, and each twist and turn has been a chance to learn and grow. My passion for technology and innovation keeps me on my toes, and I’ve set my sights on leading an organization one day. In this ever-evolving landscape, staying sharp and continuously upgrading my skills is a must.</p>
+        <p>Outside of the tech realm, you’ll find me hosting events and leading parties. It’s a way for me to blend my creativity with my technical prowess, proving that you can be both a data whiz and a party starter.</p>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects">
         <h3>My Projects</h3>
         <ul>
             <li><a href="https://github.com/Uniquenetra/ml-based-ontology-matching" target="_blank">ML-Based Ontology Matching: A project focusing on ontology matching using machine learning techniques.</a></li>
@@ -192,6 +198,22 @@
         <h3>Other Interests and Capacities</h3>
         <p>Beyond my professional work, I have a passion for hosting events and leading parties. I believe that creativity and technical expertise can go hand-in-hand, and I enjoy connecting with people both through my work and my role as an MC.</p>
         <p>I am also interested in ongoing skill development, leadership, and exploring new technologies and innovations.</p>
+    </section>
+
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <form class="contact-form" action="your-server-endpoint" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
