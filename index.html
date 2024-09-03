@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netra Kulkarni - Data Scientist</title>
+    <title>Netra Kulkarni - Data Scientist & AI Developer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,36 +11,35 @@
             color: #333;
             margin: 0;
             padding: 0;
-            position: relative;
         }
         header {
             background-color: #f9f3f3;
             padding: 20px;
             text-align: center;
             border-bottom: 5px solid #e0e0e0;
-            position: relative;
-        }
-        header img.profile-pic {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            display: block;
-            margin: 0 auto;
+            background-image: linear-gradient(to right, #ffffff, #f2f2f2);
         }
         header h1 {
             font-size: 36px;
-            margin: 10px 0 5px 0;
+            margin: 0;
             color: #6d6d6d;
         }
         header h2 {
             font-size: 24px;
-            margin: 0;
+            margin: 10px 0 0 0;
             color: #a6a6a6;
         }
-        .butterfly {
+        .hero {
+            background-image: linear-gradient(to bottom right, #ffffff, #f9f3f3);
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero img {
             position: absolute;
-            top: 300px; /* Adjust this value to align with the "About Me" section */
-            right: 10px;
+            top: 20px;
+            right: 20px;
             width: 100px;
             height: auto;
         }
@@ -48,7 +47,6 @@
             padding: 40px 20px;
             max-width: 800px;
             margin: 0 auto;
-            position: relative;
         }
         section h3 {
             color: #6d6d6d;
@@ -72,6 +70,21 @@
             color: #6d6d6d;
             text-decoration: none;
         }
+        .other-interests {
+            background-color: #f3f7fc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .resume {
+            background-color: #e0f7fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact-form {
+            background-color: #f3f7fc;
+            padding: 20px;
+            border-radius: 8px;
+        }
         footer {
             background-color: #f3f7fc;
             text-align: center;
@@ -84,16 +97,27 @@
             color: #808080;
             font-size: 14px;
         }
+        footer a {
+            color: #6d6d6d;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="butterfly1.png" alt="Butterfly Graphic" class="butterfly">
-        <img src="profile.jpg" alt="Netra Kulkarni's Profile Picture" class="profile-pic">
         <h1>Netra Kulkarni</h1>
         <h2>Data Scientist & AI Developer</h2>
     </header>
+
+    <section class="hero">
+        <h2>Welcome to My Data Science World</h2>
+        <img src="https://example.com/butterfly1.png" alt="Butterfly" />
+        <p>Explore my projects, blog posts, and more.</p>
+        <a href="#projects">Explore Projects</a> | 
+        <a href="#blog">Read Blog Posts</a> | 
+        <a href="#contact">Contact Me</a>
+    </section>
 
     <section>
         <h3>About Me</h3>
@@ -114,16 +138,54 @@
     <section class="projects">
         <h3>My Projects</h3>
         <ul>
-            <li><a href="https://github.com/Uniquenetra/ml-based-ontology-matching" target="_blank">ML-Based Ontology Matching</a></li>
-            <li><a href="https://github.com/Uniquenetra/top-n-similarity-recommendation" target="_blank">Top-N Similarity Recommendation</a></li>
-            <li><a href="https://github.com/Uniquenetra/Hand_Gesture_Recognition" target="_blank">Hand Gesture Recognition</a></li>
-            <li><a href="https://github.com/Uniquenetra/Retail_dashboard_info_viz" target="_blank">Retail Dashboard Info Viz</a></li>
-            <li><a href="https://github.com/Uniquenetra/hindi_song_writer_Gen_AI" target="_blank">Hindi Song Writer Gen AI</a></li>
+            <li><a href="https://github.com/Uniquenetra/ml-based-ontology-matching" target="_blank">ML-Based Ontology Matching</a> - A project focusing on matching ontologies using machine learning techniques.</li>
+            <li><a href="https://github.com/Uniquenetra/top-n-similarity-recommendation" target="_blank">Top-N Similarity Recommendation</a> - A recommendation system based on similarity metrics.</li>
+            <li><a href="https://github.com/Uniquenetra/Hand_Gesture_Recognition" target="_blank">Hand Gesture Recognition</a> - A system for recognizing hand gestures using deep learning.</li>
+            <li><a href="https://github.com/Uniquenetra/Retail_dashboard_info_viz" target="_blank">Retail Dashboard Info Visualization</a> - An interactive dashboard for visualizing retail data.</li>
+            <li><a href="https://github.com/Uniquenetra/hindi_song_writer_Gen_AI" target="_blank">Hindi Song Writer Gen AI</a> - An AI project for generating Hindi song lyrics.</li>
         </ul>
     </section>
 
+    <section class="blog">
+        <h3>Blog</h3>
+        <p>Check back soon for my latest posts on AI Ethics, SLMs, Deep Learning, and more. I'll also feature guest contributions from industry experts!</p>
+    </section>
+
+    <section class="case-studies">
+        <h3>Case Studies</h3>
+        <p>Detailed case studies for each of my projects will be coming soon. These will include problem statements, solutions, results, and key learnings.</p>
+    </section>
+
+    <section class="other-interests">
+        <h3>Other Interests and Capacities</h3>
+        <p>
+            I am passionate about technology and newer innovations. My journey into data science started with a 'baby' project as a Project Manager, which piqued my interest in this field. I have a strong ambition to lead an organization someday, and I’m committed to continuous skill development in this fast-changing world.
+        </p>
+        <p>
+            Beyond my professional work, I have a love for hosting events and leading parties, showcasing that creativity and technical expertise can go hand-in-hand.
+        </p>
+    </section>
+
+    <section class="contact-form" id="contact">
+        <h3>Contact Me</h3>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <section class="resume">
+        <h3>Resume/CV</h3>
+        <p>Download my <a href="https://github.com/Uniquenetra/Uniquenetra.github.io/raw/main/Netra_Kulkarni_CV.pdf" target="_blank">Resume/CV</a> to learn more about my qualifications and experience.</p>
+    </section>
+
     <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/your-username" target="_blank">LinkedIn</a> | &copy; 2024 Netra Kulkarni</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/uniquenetra" target="_blank">LinkedIn</a> | <a href="https://twitter.com/uniquenetra" target="_blank">Twitter</a> | &copy; 2024 Netra Kulkarni</p>
     </footer>
 
 </body>
