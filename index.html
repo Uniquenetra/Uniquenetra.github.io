@@ -5,244 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netra Kulkarni - Data Scientist</title>
     <style>
-        body {
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+        }
+
+        body {
+            background-color: #fff;
             color: #333;
-            margin: 0;
-            padding: 0;
         }
-        header {
-            background: linear-gradient(to right, #fbd6e0, #fef0f3);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 5px solid #e0e0e0;
-            position: relative;
-        }
-        header h1 {
-            font-size: 42px;
-            margin: 0;
-            color: #6d6d6d;
-        }
-        header h2 {
-            font-size: 28px;
-            margin: 20px 0 30px;
-            color: #a6a6a6;
-        }
-        .hero-button {
-            display: inline-block;
-            background-color: #6d6d6d;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
-            font-size: 16px;
-        }
-        .hero-button:hover {
-            background-color: #5a5a5a;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: -40px;
-            position: relative;
-            z-index: 1;
-        }
-        section h3 {
-            color: #6d6d6d;
-            margin-bottom: 20px;
-            font-size: 28px;
-        }
-        section p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .projects ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .projects li {
-            font-size: 18px;
-            margin: 20px 0;
-        }
-        .projects a {
-            color: #6d6d6d;
-            text-decoration: none;
-        }
-        .projects a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #f3f7fc;
-            text-align: center;
-            padding: 20px;
-            border-top: 5px solid #e0e0e0;
-            margin-top: 20px;
-        }
-        footer p {
-            margin: 0;
-            color: #808080;
-            font-size: 14px;
-        }
-        .contact-form {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 40px;
-        }
-        .contact-form h3 {
-            margin-bottom: 20px;
-            color: #6d6d6d;
-        }
-        .contact-form label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        .contact-form input, .contact-form textarea {
+
+        /* Banner Section */
+        .banner {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            height: 250px;
+            background: url('banner-image.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
         }
-        .contact-form button {
-            background-color: #6d6d6d;
-            color: white;
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            position: absolute;
+            bottom: -75px; /* Half overlaps the banner */
+            left: 50%;
+            transform: translateX(-50%);
+            background: url('profile-picture.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 900px;
+            margin: 100px auto 50px auto; /* Creates space below profile picture */
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #d4a5a5; /* Pastel Pink Highlight */
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            margin: 15px 10px;
             padding: 10px 20px;
+            color: #fff;
+            background-color: #d4a5a5; /* Pastel Pink */
             border: none;
             border-radius: 5px;
-            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
-        .contact-form button:hover {
-            background-color: #5a5a5a;
+
+        .btn:hover {
+            background-color: #e8bcbc;
         }
-        .image-container {
+
+        /* Section Styles */
+        .section {
+            margin: 30px auto;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #f3e6e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
             text-align: center;
-            margin-bottom: 20px;
+            margin: 30px 0;
+            font-size: 0.9rem;
+            color: #777;
         }
-        .image-container img {
-            max-width: 150px;
-            border-radius: 75px;
-            border: 3px solid #ddd;
-            margin-top: -100px;
-        }
-        .butterfly {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 150px;
-            height: auto;
-            z-index: 0;
-        }
+
     </style>
 </head>
 <body>
-    <div class="cover-container">
-    <img src="cover-pic.jpg" alt="Cover Image" class="cover-image">
-</div>
 
-    <header>
-        <!--<img src="butterfly1.png" alt="Butterfly Graphic" class="butterfly"> -->
-        <h1>Netra Kulkarni</h1>
-        <h2>Data Scientist & AI Developer</h2>
-        <div style="margin: 30px 0;">
-            <a href="#projects" class="hero-button">Explore Projects</a>
-            <a href="https://uniquenetra.github.io/from-data-to-intelligence/" class="hero-button">Read Blog Posts</a>
+    <!-- Banner Section -->
+    <div class="banner">
+        <div class="profile-picture"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Hello! I'm Netra Kulkarni</h1>
+        <h2>Data Scientist | Event Host</h2>
+        <p>
+            I thrive on turning data into delightful insights, creating magic through Machine Learning, and hosting events that bring people together. 
+        </p>
+        <div>
+            <a href="#projects" class="btn">Explore Projects</a>
+            <a href="#blog" class="btn">Read Blog</a>
+            <a href="#contact" class="btn">Contact Me</a>
         </div>
-    </header>
+    </div>
 
-    <section id="about-me">
-        <h3>About Me</h3>
-        <div class="image-container">
-            <img src="profile.jpg" alt="Netra Kulkarni">
-        </div>
-        <p>Hello! I'm Netra Kulkarni, a Data Scientist who thrives on turning data into delightful insights. With a knack for Machine Learning and Deep Learning, I don't just crunch numbers—I let the data tell its story, and believe me, it always has something interesting to say.</p>
-        <p>But let’s be real for a second—being a data scientist isn’t just about algorithms and models (though those are my jam). It’s about solving real-world problems, and I’m all about that life. Whether I’m predicting trends before they happen, designing AI that makes you wonder if it's reading your mind, or digging into data so deep that even Sherlock would be impressed, I bring a mix of precision, creativity, and a sprinkle of sass to everything I do.</p>
-        <p>When I’m not buried in code or swimming in datasets, you’ll find me on stage, either hosting a lively event or leading a party—because who says data scientists can’t be the life of the party too? I love connecting with people, whether it's through my work or through a mic.</p>
-        <p>So, if you're looking for someone who can whip your data into shape and make it dance to the tune of actionable insights, you're in the right place. Let's make some data magic together!</p>
-    </section>
+    <!-- Projects Section -->
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Check out some of my data science projects that solve real-world problems and showcase creative solutions.</p>
+    </div>
 
-    <section id="my-story">
-        <h3>My Story</h3>
-        <p>My journey into the world of data science began with what I like to call my 'baby' project—demand forecasting for one of Thailand’s biggest retailers. Diving into those algorithms was like discovering a new world, and I was hooked. Despite my role as a business analyst and project manager, I knew I had to dig deeper. So, I took a leap and enrolled in one of Portugal’s top universities to get my hands dirty with machine learning and tech.</p>
-        <p>I live by the mantra “Keep Learning, Keep Growing.” Life has taken me on a wild ride, and each twist and turn has been a chance to learn and grow. My passion for technology and innovation keeps me on my toes, and I’ve set my sights on leading an organization one day. In this ever-evolving landscape, staying sharp and continuously upgrading my skills is a must.</p>
-        <p>Outside of the tech realm, you’ll find me hosting events and leading parties. It’s a way for me to blend my creativity with my technical prowess, proving that you can be both a data whiz and a party starter.</p>
-    </section>
+    <!-- Blog Section -->
+    <div id="blog" class="section">
+        <h2>Blog</h2>
+        <p>Read my insights on AI, Machine Learning, and my journey through the world of data science.</p>
+    </div>
 
-    <section id="projects">
-    <h3>My Projects</h3>
-    <ol>
-        <li><a href="https://github.com/Uniquenetra/ml-based-ontology-matching" target="_blank">ML-Based Ontology Matching: A project focusing on ontology matching using machine learning techniques.</a></li>
-        <li><a href="https://github.com/Uniquenetra/top-n-similarity-recommendation" target="_blank">Top-N Similarity Recommendation: A recommendation system based on similarity measures.</a></li>
-        <li><a href="https://github.com/Uniquenetra/hand-gesture-recognition" target="_blank">Hand Gesture Recognition: Recognizing hand gestures using computer vision and deep learning.</a></li>
-        <li><a href="https://github.com/Uniquenetra/retail-dashboard-info-visualization" target="_blank">Retail Dashboard Info Visualization: A dashboard for visualizing retail data insights.</a></li>
-        <li><a href="https://github.com/Uniquenetra/hindi-song-writer-gen-ai" target="_blank">Hindi Song Writer Gen AI: AI-powered tool for generating Hindi song lyrics.</a></li>
-    </ol>
-    <style>
-        #projects ol {
-            padding: 0;
-            margin: 0;
-            list-style-position: inside;
-        }
-        #projects li {
-            font-size: 18px;
-            margin-bottom: 15px; /* Adjusted spacing between items */
-        }
-        #projects a {
-            color: #888; /* Slightly different font color */
-            text-decoration: none;
-            font-style: italic; /* Italicize text */
-        }
-        #projects a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</section>
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Let's connect! Whether you want to collaborate on a project, or just chat about data science, I'm here for you.</p>
+    </div>
 
-    <!-- <section id="blog"> 
-       <h3>Blog</h3>
-        <p>Placeholder for future blog posts and guest contributions. Stay tuned for insights on AI Ethics, SLMs, Deep Learning, and more.</p>
-    </section> -->
-
-    <section id="case-studies">
-        <h3>Case Studies</h3>
-        <p>Detailed case studies for specific projects will be available here, including problem statements, solutions, results, and learnings.</p>
-    </section>
-
-    <section id="other-interests">
-        <h3>Other Interests and Capacities</h3>
-        <p>Beyond my professional work, I have a passion for hosting events and leading parties. I believe that creativity and technical expertise can go hand-in-hand, and I enjoy connecting with people both through my work and my role as an MC.</p>
-        <p>I am also interested in ongoing skill development, leadership, and exploring new technologies and innovations.</p>
-    </section>
-
-    <section id="contact">
-        <h3>Contact Me</h3>
-        <div class="contact-form">
-            <form action="https://formspree.io/f/your-form-id" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/netrakulkarni86/" target="_blank">LinkedIn</a></p>
-        <p>© 2024 Netra Kulkarni. All rights reserved.</p>
+        &copy; 2024 Netra Kulkarni | All Rights Reserved
     </footer>
 
 </body>
